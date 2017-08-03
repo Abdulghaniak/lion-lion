@@ -1,0 +1,533 @@
+/****---Buttons Styling---*****/
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+    color: #ededed;
+}
+.btn-group {
+    text-align: center;
+}
+.btn-group .btn {
+    border-radius: 0px;
+    width: 20%;
+    float: initial;
+    background-color: #f6f6f6;
+    color: #696767;
+    border-color: transparent;
+    line-height: 2.5;
+}
+.btn-group .btn+.btn {
+    margin-left: 0px;
+}
+.btn-group .btn.active {
+    border-radius: 0px;
+    background-color: #333333;
+    color: #FFF;
+    z-index: 0;
+    -webkit-box-shadow: 2px 2px 5px #888888;
+    box-shadow: 2px 2px 5px #888888;
+}
+.btn {
+    background-color: #f68b20;
+    padding: 2px 20px;
+    box-shadow: 2px 2px 5px #888888;
+    color: white;
+}
+
+/****---END-Buttons Styling---*****/
+
+
+/****---Form Customization---*****/
+
+.form-control {
+    border-radius: 0px;
+}
+section {
+    margin: 35px;
+}
+select {
+    padding: 4px;
+    margin: 0;
+    background: #fff;
+    color: #888;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 10px 6px -9px rgba(204, 204, 204, 0.5), inset 0px -9px 8px -10px rgba(204, 204, 204, 0.5);
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {
+        padding-right: 18px
+    }
+}
+.form-control {
+    box-shadow: inset 0px 10px 6px -9px rgba(204, 204, 204, 0.5), inset 0px -9px 8px -10px rgba(204, 204, 204, 0.5);
+}
+.select {
+    position: relative
+}
+.select:after {
+    content: "\f078";
+    font-family: "FontAwesome";
+    font-size: 11px;
+    color: #aaa;
+    right: 8px;
+    top: 6px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+}
+.select:before {
+    content: '';
+    right: 0px;
+    top: 0px;
+    width: 26px;
+    height: 29px;
+    background: #000;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+}
+.sectionTitle {
+    color: #696767;
+    margin-bottom: 5px;
+}
+hr {
+    margin-top: 0px;
+}
+#instructions {
+    padding: 0px;
+    padding-top: 85px;
+    margin-bottom: 20px;
+}
+#instructions .btn i {
+    font-size: 11px
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.hr-primary {
+    border-top: 1px solid #ff2927;
+}
+.input-group {
+    width: 100%;
+}
+.text-danger ul {
+    background-color: #d9534f;
+    list-style-type: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 3px 0px;
+    text-align: center;
+}
+.obligatoryText {
+    font-size: small;
+    color: #696767;
+    margin-bottom: 30px;
+}
+
+/****---END-Form Customization---*****/
+
+
+/****---HEADER---*****/
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+}
+.navbar-nav li+ li::before {
+    content: '';
+    border-right: 1px solid #d5d5d5;
+    position: absolute;
+    height: 30%;
+    left: 0;
+    top: 35%;
+}
+.navbar-custom {
+    background: linear-gradient(to bottom, #fcfcfc 0%, #e6e6e6 100%);
+}
+#headerLine {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    height: 25px;
+    background-color: #ff2927;
+}
+#logo {
+    position: absolute;
+    padding: 5px 20px;
+    background-color: white;
+    border: 1px solid #c0c0c0;
+    top: 10px;
+}
+
+/****---END-HEADER---*****/
+
+
+/****---SLIDER---*****/
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+.slides ul {
+    list-style: inside none disc;
+    margin: 0;
+    padding: 0;
+}
+.slides ul li:nth-child(3) {
+    color: green;
+}
+.ps-caption {
+    display: none
+}
+.pgwSlideshow .ps-list li img {
+    height: 60px;
+    width: 100px;
+}
+.pgwSlideshow .ps-list li .ps-item {
+    margin: 0px;
+    margin-right: 4px;
+}
+.pgwSlideshow,
+.pgwSlideshow .ps-list {
+    background: #f3f3f3;
+    box-shadow: none;
+}
+.pgwSlideshow .ps-list .ps-prev,
+.pgwSlideshow .ps-list .ps-next {
+    top: 0px;
+    border-radius: 0px;
+    background-color: #404040;
+    padding: 20px 10px 20px 11px;
+}
+.ps-list {
+    margin-top: 10px;
+    border-top: 0px !important;
+}
+.pgwSlideshow .ps-list li .ps-item.ps-selected {
+    border-color: #f3f3f3;
+}
+.ps-current .ps-prev,
+.ps-current .ps-next {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.ps-current:hover .ps-prev,
+.ps-current:hover .ps-next {
+    visibility: visible;
+    opacity: 1;
+}
+
+/****---END-SLIDER---*****/
+
+
+/****---BLOG---*****/
+
+.blogPosts {
+    display: flex
+}
+.blogPost {
+    width: 31%;
+    display: inline-block;
+}
+.blogPost:not(:last-child) {
+    margin-right: 3.0%;
+}
+.blogPost > .text {
+    margin-top: 10px;
+    font-size: 13px;
+    cursor: default;
+}
+.blogPost:hover .text {
+    color: #ff2927;
+}
+
+/****---END-BLOG---*****/
+
+
+/****---PLACES---*****/
+
+.storeGrid {
+    width: 25%;
+}
+#storeCards {
+    overflow-y: scroll;
+    height: 400px;
+}
+.getDirectionButton {
+    width: 100%;
+    background-color: #1a0154;
+    color: white;
+    border-width: 0px;
+    padding: 2%;
+}
+.storeCard {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #1a0154;
+    background: #fff;
+    color: #363636;
+    text-decoration: none;
+    -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 0px;
+}
+.storeCard {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.storeCard:nth-child(3n+0) {
+    margin-right: 0px;
+}
+@media (min-width: 980px) {
+    .storeCard {
+        width: 32%;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+    .storeCard:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+.storeCard span {
+    display: block;
+}
+.storeCard .storeInfo {
+    padding: 5% 5% 3% 5%;
+}
+.storeCard .storeImage {
+    position: relative;
+    height: 125px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    background-blend-mode: overlay;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px;
+    border-radius: 0px;
+}
+.storeCard .storeImage:hover,
+.storeCard .storeImage:focus {
+    background-color: rgba(255, 255, 255, 0);
+}
+.storeCard .storeCard-title {
+    background: rgba(157, 187, 63, 0.85);
+    padding: 3.5% 0 2.5% 0;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.storeCard .storeCard-title h3 {
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding: 0 3.5%;
+    margin: 0;
+}
+.storeCard .card-meta {
+    max-height: 0;
+    overflow: hidden;
+    color: #666;
+    font-size: .78em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5%;
+    padding: 0 5%;
+    -moz-transition-property: max-height;
+    -o-transition-property: max-height;
+    -webkit-transition-property: max-height;
+    transition-property: max-height;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.storeCard:hover,
+.storeCard:focus {
+    background: white;
+    -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+}
+.storeCard:hover .storeCard-title,
+.storeCard:focus .storeCard-title {
+    background: rgba(157, 187, 63, 0.95);
+}
+.storeCard:hover .storeCard-meta,
+.storeCard:focus .storeCard-meta {
+    max-height: 1em;
+}
+.storeInfo .subText {
+    color: #666666;
+    font-weight: 600;
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+.storeInfo b {
+    font-size: small;
+}
+.storeContactInfo {
+    border-top: 2px solid #1a0154;
+    padding: 5% 5% 3% 5%;
+}
+.storeContactInfo > span {
+    display: inline-block;
+    width: 50%;
+}
+
+/*Sorting Icons*/
+
+.sortIcon.active {
+    color: rgb(253, 2, 0);
+}
+#sortingSection {
+    margin: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/****---END-PLACES---*****/
+
+
+/****---FOOTER---*****/
+
+#footerIcon {
+    float: left
+}
+#footerContactInfo span {
+    color: #696767;
+    font-size: 10px;
+}
+#footerContactInfo {
+    text-align: right;
+    line-height: 15px;
+}
+footer > .container {
+    padding: 15px 0px;
+    border-top: 1px solid #adadad;
+}
+
+/****---END-FOOTER---*****/
+
+
+/****---Lightbox---*****/
+
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width: inherit;
+    height: inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+/****---END-Lightbox---*****/
+
+
+/****---Mobile Media Quiries---*****/
+
+@media (max-width: 767px) {
+    #logo img {
+        width: 100px;
+    }
+    .pgwSlideshow.narrow .ps-list li img {
+        width: 60px;
+        height: 35px;
+    }
+    .pgwSlideshow.narrow .ps-list .ps-prev,
+    .pgwSlideshow.narrow .ps-list .ps-next {
+        top: 0px;
+        padding: 7px 12px;
+    }
+    section {
+        padding: 15px 0px 0px 0px;
+    }
+    .blogPosts {
+        display: block;
+        text-align: center
+    }
+    .blogPost {
+        width: 100%;
+    }
+    .btn-group .btn {
+        width: 50%;
+    }
+    .blogPost {
+        margin-bottom: 20px;
+    }
+    .blogPost > .text {
+        font-size: 15px;
+    }
+    .navbar-custom {
+        background: #ffffff
+    }
+    .navbar-custom .navbar-toggle:focus,
+    .navbar-custom .navbar-toggle:hover {
+        background-color: #f68b20;
+        border-color: #f68b20;
+    }
+    .navbar-custom .navbar-toggle {
+        border-color: black;
+        color: black
+    }
+    .hidden-md .btn.btn-primary {
+        padding: 6px;
+        box-shadow: none;
+    }
+    #form p {
+        font-size: 15px;
+    }
+    .storeCard {
+        width: 100%;
+    }
+    section {
+        margin: 0px;
+    }
+    #instructions {
+        padding-top: 100px;
+    }
+}
+
+/****---END-Mobile Media Quiries---*****/
